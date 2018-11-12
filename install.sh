@@ -2,7 +2,7 @@
 
 LOG_LOCATION="/var/log"
 INSTALL_SOURCE=$(pwd)
-exec > >>(tee -i $LOG_LOCATION/wordpress-instal.log)
+exec > >(tee -ai $LOG_LOCATION/wordpress-instal.log)
 exec 2>&1
 echo "Installing from $INSTALL_SOURCE and logging to $LOG_LOCATION/wordpress-install.log"
 
