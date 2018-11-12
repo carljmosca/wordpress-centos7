@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install epel-release yum-utils -y
+yum install wget epel-release yum-utils -y
 yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum-config-manager --enable remi-php72
 
